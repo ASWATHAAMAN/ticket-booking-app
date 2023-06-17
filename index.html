@@ -26,31 +26,30 @@
       <div class="movie-container">
         <label for="movie-price" class="label-text">Pick a Movie:</label>
         <select name="movie-price" id="movie-price" class="movie-price">
-          <option value="100">Movie One-100</option>
-          <option value="150">Movie Two-150</option>
-          <option value="200">Movie Three-200</option>
-          <option value="250">Movie Four-250</option>
+          <option value="0" selected disabled>select a movie</option>
+          <option value="100">RRR-100</option>
+          <option value="150">KGF-2-150</option>
+          <option value="200">PS-2-200</option>
+          <option value="250">lEO-250</option>
         </select>
       </div>
       <div class="legend-container">
         <div class="legend-info">
           <div class="seats"></div>
-          <span class="legend-text">Available</span>
+          <span class="info-text">Available</span>
         </div>
-
         <div class="legend-info">
-          <div class="seats"></div>
-          <span class="legend-text">Selected</span>
+          <div class="seats selected"></div>
+          <span class="info-text">Selected</span>
         </div>
-
         <div class="legend-info">
-          <div class="seats"></div>
-          <span class="legend-text">Occupied</span>
+          <div class="seats occupied"></div>
+          <span class="info-text">Occupied</span>
         </div>
       </div>
       <div class="screen-container">
         <div class="screen"></div>
-        <div class="seats-container">
+        <div class="seats-container" id="seats-container">
           <div class="row">
             <div class="seats"></div>
             <div class="seats"></div>
@@ -74,40 +73,40 @@
           <div class="row">
             <div class="seats"></div>
             <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-          </div>
-          <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
             <div class="seats"></div>
             <div class="seats"></div>
           </div>
           <div class="row">
             <div class="seats"></div>
             <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
             <div class="seats"></div>
             <div class="seats"></div>
             <div class="seats"></div>
             <div class="seats"></div>
           </div>
           <div class="row">
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
             <div class="seats"></div>
             <div class="seats"></div>
             <div class="seats"></div>
             <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+          </div>
+          <div class="row">
             <div class="seats"></div>
             <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
+            <div class="seats occupied"></div>
             <div class="seats"></div>
             <div class="seats"></div>
           </div>
@@ -115,8 +114,9 @@
       </div>
       <div class="output-container">
         <p class="result">
-          You have selected <span class="count">0</span> for a total of
-          <span class="total">₹ 0</span>
+          You have selected <span class="count" id="count">0</span> for a total
+          of
+          <span class="total" id="total">₹ 0</span>
         </p>
       </div>
     </div>
