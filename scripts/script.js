@@ -13,7 +13,10 @@ let total;
 
 // functions
 function init() {
-  
+  // price = moviePriceEl.value;
+  // console.log(price);
+  // seatCount = 0;
+  // total = seatCount * price;
 }
 
 // eventListeners
@@ -29,13 +32,11 @@ for (let i = 0; i < seatsEl.length; i = i + 1) {
     } else {
       Event.target.classList.add(`selected`);
     }
-     seatCount = document.querySelectorAll(`.row .seats.selected`).length;
+    seatCount = document.querySelectorAll(`.row .seats.selected`).length;
     countEl.innerText = seatCount;
 
     total = seatCount * price;
     totalEl.innerText = total;
-    
-    
   });
 }
 
