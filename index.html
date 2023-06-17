@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket Booking Application</title>
-    <link rel="shortcut icon" href="./images/dress-code.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/dress-code.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
@@ -17,6 +21,105 @@
     />
   </head>
   <body>
+    <div class="main">
+      <h1 class="heading">Book Your Movie Seats</h1>
+      <div class="movie-container">
+        <label for="movie-price" class="label-text">Pick a Movie:</label>
+        <select name="movie-price" id="movie-price" class="movie-price">
+          <option value="100">Movie One-100</option>
+          <option value="150">Movie Two-150</option>
+          <option value="200">Movie Three-200</option>
+          <option value="250">Movie Four-250</option>
+        </select>
+      </div>
+      <div class="legend-container">
+        <div class="legend-info">
+          <div class="seats"></div>
+          <span class="legend-text">Available</span>
+        </div>
+
+        <div class="legend-info">
+          <div class="seats"></div>
+          <span class="legend-text">Selected</span>
+        </div>
+
+        <div class="legend-info">
+          <div class="seats"></div>
+          <span class="legend-text">Occupied</span>
+        </div>
+      </div>
+      <div class="screen-container">
+        <div class="screen"></div>
+        <div class="seats-container">
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+          <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+          </div>
+        </div>
+      </div>
+      <div class="output-container">
+        <p class="result">
+          You have selected <span class="count">0</span> for a total of
+          <span class="total">₹ 0</span>
+        </p>
+      </div>
+    </div>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
